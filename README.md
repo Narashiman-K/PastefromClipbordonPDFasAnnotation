@@ -1,64 +1,67 @@
-# PSPDFKit for Web Example – Vite.js
+# Create Annotation from Clipboard (ctrl+v)
 
-This example shows how to integrate [PSPDFKit for Web](https://pspdfkit.com/web/) into a [Vite.js](https://vitejs.dev/) with React app.
+This project enables pasting content from the clipboard onto a PDF as a text/image annotation accordingly using PSPDFKit. It is built with React, TypeScript, and Vite.
 
 ## Prerequisites
 
-- [Node.js](http://nodejs.org/)
-
-## Support, Issues and License Questions
-
-PSPDFKit offers support for customers with an active SDK license via https://pspdfkit.com/support/request/
-
-Are you [evaluating our SDK](https://pspdfkit.com/try/)? That's great, we're happy to help out! To make sure this is fast, please use a work email and have someone from your company fill out our sales form: https://pspdfkit.com/sales/
+- Node.js (version 14 or later)
+- npm (version 6 or later)
 
 ## Getting Started
 
-Clone the repo:
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/Narashiman-K/PastefromClipbordonPDFasAnnotation.git
+    cd PastefromClipbordonPDFasAnnotation
+    ```
 
-```bash
-git clone https://github.com/PSPDFKit/pspdfkit-web-example-vite.git
-cd pspdfkit-web-example-vite
-```
+2. Install the project dependencies:
+    ```sh
+    npm install
+    ```
 
-Install the project dependencies:
+3. Copy the PSPDFKit for Web library assets to the `public` directory:
+    ```sh
+    cp -R ./node_modules/pspdfkit/dist/pspdfkit-lib public/pspdfkit-lib
+    ```
 
-```shell script
-npm install
-```
+## Running the Development Server
 
-## Running the Example
+  To start the development server, run:
+      ```sh
+      npm run dev
+      ```
 
-We are ready to launch the app! 🎉
+You can now open [http://localhost:5173](http://localhost:5173) in your browser and enjoy!
 
-```shell script
-npm run dev
-```
+## Building for Production
 
-You can now open http://localhost:5173 in your browser and enjoy!
+  To create a production build of the app and serve it:
+      ```sh
+      npm run build
+      npm run preview
+      ```
 
-To create a production build of the app and serve it:
-
-```shell script
-npm run build
-npm run preview
-```
-
-You can now preview your build http://localhost:4173 in your browser.
-
-Enjoy 🍕
-
-## React Component
-
-The React component which implements the PSPDFKit for Web integration can be found at `src/components/PdfViewerComponent.jsx`.
-
-In order to make the PSPDFKit SDK assets available they have to be copied from the `node_modules/pspdfkit/dist` folder to `public/pspdfkit-lib` folder. For that purpose this example uses a copy plugin which you can find at `vite.config.js`.
+Open your browser and navigate to [http://localhost:4173](http://localhost:4173) to see the application in action.
 
 ## License
 
-This software is licensed under a [modified BSD license](LICENSE).
+This project is licensed under the BSD license. See the LICENSE file for more details.
 
 ## Contributing
 
-Please ensure
-[you have signed our CLA](https://pspdfkit.com/guides/web/current/miscellaneous/contributing/) so that we can accept your contributions.
+Please ensure you have signed our CLA so that we can accept your contributions.
+
+## Support, Issues and License Questions
+
+PSPDFKit offers support for customers with an active SDK license via [PSPDFKit Support](https://pspdfkit.com/support/request/).
+
+Are you [evaluating our SDK](https://pspdfkit.com/try/)? That's great, we're happy to help out! To make sure this is fast, please use a work email and have someone from your company fill out our [sales form](https://pspdfkit.com/sales/).
+
+## About
+
+This project allows you to paste content from the clipboard onto a PDF as an annotation.
+
+## Author
+
+Narashiman Krishnamurthy
